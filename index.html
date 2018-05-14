@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>STEADYMAI ENTERTAINMENT - Creating amusement since day one.</title>
+    <style>
+      a {
+        text-decoration: none;
+      }
+      #container {
+        display: block;
+        margin: 75px auto 0;
+        width: 960px;
+      }
+      #logo {
+        display: block;
+        margin: 0 auto 20px;
+        width: 500px;
+      }
+      #subtitle {
+        display: block;
+        margin: 0 auto 50px;
+        width: 500px;
+      }
+      #entertainment {
+        display: block;
+        margin: 0 auto 50px;
+        width: 150px;
+      }
+      #press-start {
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+        animation: blink 1s steps(5, start) infinite;
+        -webkit-animation: blink 1s steps(5, start) infinite;
+      }
+      @keyframes blink {
+        to {
+          visibility: hidden;
+        }
+      }
+      @-webkit-keyframes blink {
+        to {
+          visibility: hidden;
+        }
+      }
+
+    @media screen and (max-width: 960px) {
+      #container {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      #logo, #subtitle {
+        width: 90%;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img src="img/logo.png" id="logo" />
+      <img src="img/subtitle.png" id="subtitle" />
+      <img src="img/entertainment.gif" id="entertainment" />
+      <a href="#">
+        <img src="img/press-start.png" id="press-start" />
+      </a>
+    </div>
+  </body>
+</html>
